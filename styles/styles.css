@@ -12,6 +12,7 @@ body {
 header {
     background-color: #fdf158;
     height: 56px;
+    font-size: 2rem;
 }
 
 main {
