@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -10,17 +11,33 @@ body {
 }
 
 header {
-    background-color: #fdf158;
+    background-color: #0f0f0f;
     height: 56px;
-    font-size: 2rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.menuBtnLogo {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.menuBtnLogo div{
+    height: 20px;
 }
 
 main {
     flex-grow: 1;
     display: flex;
+    overflow-y: hidden;
 }
 
-main, .sideMenu, .mainContent {
+.sideMenu, .mainContent {
     overflow-y: scroll;
 }
 
@@ -36,3 +53,66 @@ main, .sideMenu, .mainContent {
     color: #e6ffff;
     flex-grow: 1;
 }
+
+.settings {
+    background-color: #0f0f0f;
+    color: white;
+    border: none;
+}
+
+.signIn {
+    background-color: transparent;
+    color: #3ea6ff;
+    border-radius: 20px;
+    padding: .5rem 1rem;
+    font-weight: bold;
+    border: 1px solid #303030;
+    display: inline-flex;
+    gap: .5rem;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+    .signIn:hover {
+        background-color: #263850;
+        border-color: transparent;
+        cursor: pointer;
+    }
+
+    .settingsSignIn {
+        display: flex;
+        gap: .5rem;
+    }
+
+    .search {
+        display: flex;
+    }
+
+    .searchBar {
+        display: flex;
+        width: 515px;
+        height: 40px;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        padding: .5rem 1rem;
+        border: solid 1px #303030;
+        background-color: #0f0f0f;
+    }
+
+    .searchBtn {
+        display: flex;
+        width: 64px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        border: solid 1px #303030;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        color: white;
+        background-color: #303030;
+    }
+
+    .searchBtn:hover {
+        background-color: #595858;
+        cursor: pointer;
+    }
